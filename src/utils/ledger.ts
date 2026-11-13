@@ -487,11 +487,23 @@ export function applyTripMembersUpdate(trip: Trip, nextMembers: Member[]): Trip 
       splitValues = cleaned;
     }
 
+    let receiptBreakdown = exp.receiptBreakdown;
+    if (receiptBreakdown && Array.isArray(receiptBreakdown.items)) {
+      receiptBreakdown = {
+        ...receiptBreakdown,
+        items: receiptBreakdown.items.map((item) => ({
+          ...item,
+          sharedByIds: item.sharedByIds.filter((id) => nextIdSet.has(id)),
+        })),
+      };
+    }
+
     return {
       ...exp,
       paidById,
       participantIds,
       splitValues,
+      receiptBreakdown,
     };
   });
 

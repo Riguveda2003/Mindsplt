@@ -10,6 +10,7 @@ import {
   type ActivePaymentToast,
 } from './components/PaymentToast';
 import { RatesAndGroupPanel } from './components/RatesAndGroupPanel';
+import { ReceiptCaptureModal } from './components/ReceiptCaptureModal';
 import { SpendingChart } from './components/SpendingChart';
 import { TripSummaryStrip } from './components/TripSummaryStrip';
 import type {
@@ -54,6 +55,8 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<ActiveTab>('overview');
   const [isExpenseModalOpen, setIsExpenseModalOpen] = useState(false);
   const [editingExpense, setEditingExpense] = useState<Expense | null>(null);
+  const [isReceiptModalOpen, setIsReceiptModalOpen] = useState(false);
+  const [editingReceiptExpense, setEditingReceiptExpense] = useState<Expense | null>(null);
   const [isNewTripModalOpen, setIsNewTripModalOpen] = useState(false);
   const [isEditMembersOpen, setIsEditMembersOpen] = useState(false);
   const [activeToast, setActiveToast] = useState<ActivePaymentToast | null>(null);
@@ -159,6 +162,25 @@ export default function App() {
     });
     setIsExpenseModalOpen(false);
     setEditingExpense(null);
+    setIsReceiptModalOpen(false);
+    setEditingReceiptExpense(null);
+  };
+
+  const handleOpenEditExpense = (exp: Expense) => {
+    if (exp.receiptBreakdown) {
+      setEditingReceiptExpense(exp);
+      setIsReceiptModalOpen(true);
+    } else {
+      setEditingExpense(exp);
+      setIsExpenseModalOpen(true);
+    }
+  };
+
+  const handleOpenNewReceiptCapture = () => {
+    setIsExpenseModalOpen(false);
+    setEditingExpense(null);
+    setEditingReceiptExpense(null);
+    setIsReceiptModalOpen(true);
   };
 
   const handleDeleteExpense = (expenseId: string) => {
@@ -461,10 +483,8 @@ export default function App() {
                     setEditingExpense(null);
                     setIsExpenseModalOpen(true);
                   }}
-                  onEditExpense={(exp) => {
-                    setEditingExpense(exp);
-                    setIsExpenseModalOpen(true);
-                  }}
+                  onOpenReceiptCapture={handleOpenNewReceiptCapture}
+                  onEditExpense={handleOpenEditExpense}
                   onDeleteExpense={handleDeleteExpense}
                 />
               </div>
@@ -501,10 +521,8 @@ export default function App() {
               setEditingExpense(null);
               setIsExpenseModalOpen(true);
             }}
-            onEditExpense={(exp) => {
-              setEditingExpense(exp);
-              setIsExpenseModalOpen(true);
-            }}
+            onOpenReceiptCapture={handleOpenNewReceiptCapture}
+            onEditExpense={handleOpenEditExpense}
             onDeleteExpense={handleDeleteExpense}
           />
         )}
@@ -553,6 +571,20 @@ export default function App() {
         onClose={() => {
           setIsExpenseModalOpen(false);
           setEditingExpense(null);
+        }}
+        onOpenReceiptCapture={handleOpenNewReceiptCapture}
+        onSave={handleSaveExpense}
+      />
+
+      <ReceiptCaptureModal
+        isOpen={isReceiptModalOpen}
+        editingExpense={editingReceiptExpense}
+        members={activeTrip.members}
+        homeCurrency={activeTrip.homeCurrency}
+        rates={rates}
+        onClose={() => {
+          setIsReceiptModalOpen(false);
+          setEditingReceiptExpense(null);
         }}
         onSave={handleSaveExpense}
       />

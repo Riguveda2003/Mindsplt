@@ -214,6 +214,10 @@ export function normalizeTrip(raw: Partial<Trip>, fallbackIdx = 0): Trip {
         category: e.category || 'Other',
         date: String(e.date ?? new Date().toISOString().slice(0, 10)),
         notes: e.notes,
+        receiptBreakdown:
+          e.receiptBreakdown && typeof e.receiptBreakdown === 'object'
+            ? e.receiptBreakdown
+            : undefined,
         createdAt: String(e.createdAt ?? new Date().toISOString()),
       }))
     : [];

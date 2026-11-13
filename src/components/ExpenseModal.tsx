@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { X } from 'lucide-react';
+import { Sparkles, X } from 'lucide-react';
 import type {
   CurrencyCode,
   ExchangeRates,
@@ -26,6 +26,7 @@ interface ExpenseModalProps {
   homeCurrency: CurrencyCode;
   rates?: ExchangeRates;
   onClose: () => void;
+  onOpenReceiptCapture?: () => void;
   onSave: (expenseData: Omit<Expense, 'id' | 'createdAt'>, existingId?: string) => void;
 }
 
@@ -45,6 +46,7 @@ export function ExpenseModal({
   homeCurrency,
   rates = DEFAULT_EXCHANGE_RATES,
   onClose,
+  onOpenReceiptCapture,
   onSave,
 }: ExpenseModalProps) {
   const [title, setTitle] = useState('');
@@ -258,6 +260,23 @@ export function ExpenseModal({
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4 p-5" noValidate>
+          {!editingExpense && onOpenReceiptCapture && (
+            <div className="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-teal-200 bg-teal-50/70 px-3.5 py-2.5">
+              <div className="text-xs text-teal-950">
+                <span className="font-semibold">Got a messy receipt or chat note?</span>{' '}
+                <span className="text-teal-800">Let AI extract items, tax &amp; tip.</span>
+              </div>
+              <button
+                type="button"
+                onClick={onOpenReceiptCapture}
+                className="inline-flex min-h-[32px] shrink-0 items-center gap-1.5 rounded-lg bg-teal-700 px-3 py-1 text-xs font-semibold text-white hover:bg-teal-800"
+              >
+                <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
+                <span>Smart Receipt</span>
+              </button>
+            </div>
+          )}
+
           {error && (
             <div
               role="alert"

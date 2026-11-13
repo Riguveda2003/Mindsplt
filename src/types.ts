@@ -23,6 +23,44 @@ export interface Member {
   color: string;
 }
 
+export type ReceiptTaxTipMode = 'proportional' | 'equal';
+
+export interface ReceiptLineItem {
+  id: string;
+  name: string;
+  quantity: number;
+  price: number;
+  sharedByIds: string[];
+}
+
+export interface ReceiptBreakdown {
+  items: ReceiptLineItem[];
+  tax: number;
+  tip: number;
+  discount: number;
+  taxTipMode: ReceiptTaxTipMode;
+  rawSourceText?: string;
+}
+
+export interface ParsedReceiptResult {
+  merchantTitle: string;
+  currency: CurrencyCode;
+  date: string;
+  category: ExpenseCategory;
+  paidByName: string;
+  items: Array<{
+    name: string;
+    quantity: number;
+    totalPrice: number;
+    suggestedMembers: string[];
+  }>;
+  tax: number;
+  tip: number;
+  discount: number;
+  receiptTotal: number;
+  notes: string;
+}
+
 export interface Expense {
   id: string;
   title: string;
@@ -36,6 +74,7 @@ export interface Expense {
   category: ExpenseCategory;
   date: string;
   notes?: string;
+  receiptBreakdown?: ReceiptBreakdown;
   createdAt: string;
 }
 
