@@ -1,0 +1,6 @@
+{
+  "name": "mindsplt",
+  "description": "Multi-currency group and trip expense splitter with automatic home-currency conversion and one-tap balance settlement.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,242 @@
+---
+name: mindsplt
+colors:
+  surface: '#0b1326'
+  surface-dim: '#0b1326'
+  surface-bright: '#31394d'
+  surface-container-lowest: '#060e20'
+  surface-container-low: '#131b2e'
+  surface-container: '#171f33'
+  surface-container-high: '#222a3d'
+  surface-container-highest: '#2d3449'
+  on-surface: '#dae2fd'
+  on-surface-variant: '#bccac0'
+  inverse-surface: '#dae2fd'
+  inverse-on-surface: '#283044'
+  outline: '#87948b'
+  outline-variant: '#3d4a42'
+  surface-tint: '#68dba9'
+  primary: '#68dba9'
+  on-primary: '#003825'
+  primary-container: '#25a475'
+  on-primary-container: '#00311f'
+  inverse-primary: '#006c4a'
+  secondary: '#4edea3'
+  on-secondary: '#003824'
+  secondary-container: '#00a572'
+  on-secondary-container: '#00311f'
+  tertiary: '#ffb95f'
+  on-tertiary: '#472a00'
+  tertiary-container: '#ca8100'
+  on-tertiary-container: '#3e2400'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#85f8c4'
+  primary-fixed-dim: '#68dba9'
+  on-primary-fixed: '#002114'
+  on-primary-fixed-variant: '#005137'
+  secondary-fixed: '#6ffbbe'
+  secondary-fixed-dim: '#4edea3'
+  on-secondary-fixed: '#002113'
+  on-secondary-fixed-variant: '#005236'
+  tertiary-fixed: '#ffddb8'
+  tertiary-fixed-dim: '#ffb95f'
+  on-tertiary-fixed: '#2a1700'
+  on-tertiary-fixed-variant: '#653e00'
+  background: '#0b1326'
+  on-background: '#dae2fd'
+  surface-variant: '#2d3449'
+typography:
+  display:
+    fontFamily: Manrope
+    fontSize: 40px
+    fontWeight: '700'
+    lineHeight: 48px
+    letterSpacing: -0.03em
+  headline-lg:
+    fontFamily: Manrope
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 40px
+    letterSpacing: -0.02em
+  headline-lg-mobile:
+    fontFamily: Manrope
+    fontSize: 26px
+    fontWeight: '700'
+    lineHeight: 34px
+    letterSpacing: -0.02em
+  headline-md:
+    fontFamily: Manrope
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+    letterSpacing: -0.015em
+  headline-sm:
+    fontFamily: Manrope
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: -0.01em
+  title-md:
+    fontFamily: Manrope
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 26px
+  body-lg:
+    fontFamily: DM Sans
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: DM Sans
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 22px
+  body-sm:
+    fontFamily: DM Sans
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 18px
+  label-md:
+    fontFamily: DM Sans
+    fontSize: 13px
+    fontWeight: '600'
+    lineHeight: 18px
+    letterSpacing: 0.01em
+  label-sm:
+    fontFamily: DM Sans
+    fontSize: 11px
+    fontWeight: '700'
+    lineHeight: 16px
+    letterSpacing: 0.04em
+  numeric-hero:
+    fontFamily: Manrope
+    fontSize: 36px
+    fontWeight: '700'
+    lineHeight: 44px
+    letterSpacing: -0.03em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-sm: 0.75rem
+  margin: 1rem
+  margin-md: 1.5rem
+  margin-lg: 2rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+The design system establishes an elevated, calm, and discreetly luxurious environment for shared finances and group travel accounting. Rather than inducing anxiety around debts and repayments, the aesthetic draws inspiration from modern boutique private banking and tactile architectural materials: dark obsidian slate surfaces, disciplined typography, and luminous jewel-toned mint accents.
+
+### Personality & Demeanor
+- **Composed & Impartial:** Finances are treated without friction or panic. Statuses are expressed through balanced tones rather than punitive, loud indicators.
+- **Architectural & Sleek:** Deep layers of slate and carbon provide a structured stage where numbers, balances, and participant shares feel orderly and precise.
+- **Discreet Luxury:** Minimal extraneous decoration; value is communicated through generous negative space, crisp micro-borders, and high-legibility typographic hierarchies.
+
+### Aesthetic Approach
+A hybrid of **Minimalism** and **Tactile Dark Glassmorphism**. Surfaces utilize tiered dark slate fills with ultra-subtle ambient rim illumination, paired with vibrant mint green accents signifying solved balances, clear settlements, and financial flow.
+
+## Colors
+
+The palette operates in a dark slate environment designed to minimize cognitive overload while traveling. Rich slate bases establish baseline elevation, while calculated emerald and mint highlights evoke growth, liquidity, and settled ledgers.
+
+### Palette Architecture
+- **Primary (`#059669`) & Secondary (`#10B981`):** Deep emerald anchor and vibrant mint highlight. Dedicated to positive balances, completed settlements, primary confirmation actions, and group solvency.
+- **Tertiary (`#F59E0B`) & Alert Accents (`#EF4444`):** Warm amber indicates pending obligations or uneven splits without hostility; muted coral/red is reserved strictly for unpaid liabilities requiring urgent resolution.
+- **Neutral Core (`#0F172A` to `#1E293B`):** Multi-layered navy slate shades driving canvas backdrops, grouped ledger cards, sheet overlays, and input containers.
+- **Foreground Levels:** Primary text (`#F8FAFC`), secondary text (`#94A3B8`), and subtle tertiary text (`#64748B`) guarantee high contrast without harsh white glare.
+
+## Typography
+
+Typographic scale is structured to prioritize legibility of financial figures, tabular data, and quick balance scanning on mobile viewports.
+
+- **Headline Family (Manrope):** Geometric yet friendly sans-serif with open apertures and solid geometric numbers. Applied to headers, grand totals, category sums, and person balance banners.
+- **Body & Label Family (DM Sans):** Smooth, low-contrast, highly legible neutral workhorse. Deployed for transaction names, split participant breakdowns, dates, and input values.
+- **Tabular Figures:** All numeric displays (balances, currency values, splits) must enforce tabular numbers (`font-variant-numeric: tabular-nums`) to ensure strict columnar vertical alignment across transaction rows.
+
+## Layout & Spacing
+
+The design system is engineered mobile-first with responsive fluid scaling for cross-device travel access (smartphones, tablets, and desktop dashboards).
+
+### Grid & Margins
+- **Mobile (< 640px):** Single-column fluid view with `1rem` outer canvas padding (`margin`) and `0.75rem` card gutters (`gutter-sm`). Bottom-docked primary action zone for quick expense logging.
+- **Tablet (640px - 1024px):** 6-column fluid grid, `1.5rem` outer margins (`margin-md`), grouping navigation and expense totals into adjacent ledger columns.
+- **Desktop (L
+NŠŠˆL‹XÛÛ[[ˆ^[Ý]Ù[\™YÚ]X^ÚYÙˆLLŒ[™œ™[XX\™Ú[œÈ
+X\™Ú[‹[Ø
+K][^š[™ÈHÜ]\[™H^[Ý]
+š\ÛÛ^[™˜[[˜Ù\ÈÛˆHYÚ›Û›ÛÙÚXØ[™YY[™YÙ\ˆœ™XZÙÝÛˆÛˆHšYÚ
+K‚‚ˆÈÈÈÜXÚ[™Èš]BÛÛ\Û™[ÜXÚ[™È›ÛÝÜÈ[ˆ\˜Ú]XÝ\˜[š]K][^š[™ÈÜXÙK^Ø
+
+H[™ÜXÙK\ÛX
+
+H›ÜˆYÚHÛÝ\Y][\È
+]˜]\œËYÜËÝ\œ™[˜ÚY\ÊH[™ÜXÙK[Y
+Mœ
+H›ÝYÚÜXÙK^
+Ìœ
+H›ÜˆØ\™[\š[ÜœÈ[™˜[œØXÝ[Ûˆ\ÝÜ›Ý\[™ÜË‚‚ˆÈÈ[]˜][Ûˆ	ˆ\‚•š\ÝX[Y\˜\˜ÚH\Ù\È\ÚXØ[Û˜[ÝXÚÚ[™È[™™\Ý˜Z[™Y[XšY[[Z[™\ØÙ[˜ÙH˜]\ˆ[ˆÝ\šÈ›ÜÚYÝÜË‚‚ˆÈÈÈÝ\™˜XÙHY\œÂŒKˆ
+Š“]™[
+Ø[˜\È˜\ÙJNŠŠˆY\\ÝÛ]HÌLŒQXœÛÜ˜š[™È™Y›XÝ[ÛœÈ[™Ü›Ý[™[™ÈH[\™˜XÙK‚Œ‹ˆ
+Š“]™[H
+Ø\™	ˆÜ›Ý\^Y\ŠNŠŠˆÛÛYÌLÌPÌÌXÚ]H\˜[œÛXÙ[Ü›Ü™\ˆ
+™Ø˜JMKMKMKŒ
+X
+H[™[š\ÚX›HÝÙ\ˆ›Ü™\‹Ú[][][™ÈÝ™\šXYYÚ[™Ë‚ŒËˆ
+Š“]™[ˆ
+[Ù[ËÝ™\›^\Ë›Ø][™ÈÚY]ÊNŠŠˆÌQLŽLÐ˜[]˜]YÚ][ˆ[XšY[Y\][YÚYÝÈ
+›Þ\ÚYÝÎˆLœÌœM™Ø˜J‹‹ŒËJX
+K‚ˆ
+Š“]™[È
+›ØÝ\ÙY	ˆ[\˜XÝ]™HÝ]\ÊNŠŠˆXØÙ[š[™È[Z[™\ØÙ[˜ÙHÚ]HY™\ÙHZ[ÛÝÈ
+MœLœ™Ø˜JM‹NKLŽKŒJX
+K‚‚ˆÈÈÈÛ\ÜÈÝ™\›^\Â”\œÚ\Ý[ÝXÚÞHÝ[È[™›ÝÛHXÝ[ÛˆÚY]È[\ÞHÝXH˜XÚÙ›Ü›\ˆ
+˜XÚÙ›ÜYš[\Žˆ›\ŠMœ
+NÈ˜XÚÙÜ›Ý[™ˆ™Ø˜JMKŒË‹ŽŠX
+K™\Ù\š[™ÈÛÛ[[Ý\È]Ø\™[™\ÜÈÙˆH[™\›Z[™È^[œÙH\Ý‚‚ˆÈÈÚ\\Â‚•H›Ý[™Y™\ÜÈ]™[\ÈYš[™Y\È
+ŠŒˆ
+›Ý[™Y
+JŠ‹ˆ\È[\\È[ˆ\›ØXÚX›K[Ù\›ˆ™Y[Ú[H™\Ù\š[™ÈÝXÝ\˜[\ØÚ\[™HXÜ›ÜÜÈ]KY[œÙHÙ][Y[\ÝË‚‚‹H
+Š˜\ÙH˜Y]\È
+\™[HÈ
+NŠŠˆ›Ü›H[œ]Ë]ÛœË\Ý][HÛÛZ[™\œË[™\XÚ\[[\Ë‚‹H
+Š“\™ÙH˜Y]\È
+›Ý[™Y[Ø\™[HÈMœ
+NŠŠˆš\Ý[[X\žHØ\™Ëš[Ü][™[Ë[Ù[›ÝÛHÚY]Ë‚‹H
+Š”[˜Y]\È
+›Ý[™YY[
+NŠŠˆØ]YÛÜžH[™XØ]ÜœËÝ]\ÈÚ\Ë\Ù\ˆ]˜]\œË[™š[X\žH]ZXÚËXY›Ø][™ÈXÝ[ÛˆšYÙÙ\œË‚‚ˆÈÈÛÛ\Û™[Â‚ˆÈÈÈ]ÛœÂ‹H
+Š”š[X\žH
+”Ù]H‹Y^[œÙHŠNŠŠˆÛÛYš[ÌNMŽX˜[œÚ][Ûš[™ÈÈÌLŽNXÛˆÝ™\‹ØXÝ]™Kˆ^\ÈÜš\ÜÚ]HÑ‘‘‘‘‘˜›ÛX[œ›ÜXÙ[ZKX›ÛˆZYÚÛˆ[Øš[H›Üˆ\™ÛÛ›ÛZXÈÝXÚXØÝ\˜XÞK‚‹H
+Š”ÙXÛÛ™\žNŠŠˆÝ\™˜XÙHš[ÌQLŽLÐ˜ÝXHÝ][™H™Ø˜JMKMKMKŒJX^ÑŽQØ‚‹H
+Š‘\ÝXÝ]™HÈ\Ü]NŠŠˆ[Y˜[œÜ\™[XžH˜\ÙH
+™Ø˜JŒÎKŽŽŒLŠX
+K^ÑQ‚‚ˆÈÈÈØ]YÛÜžH	ˆÝ]\ÈÚ\Â‹H[\Ú\Y[™XØ]ÜœÈ
+›Ý[™YY[
+HÚ]HZYÚÙˆŽ‚‹HÝXH[Yš[ÈX]Ú[™ÈHØ]YÛÜžH
+K™Ë‹[š[™Îˆ[X™\ˆ[˜[œÚ]ˆÞX[ˆ[Ý^\Îˆ\œH[
+K‚‹HÙ][Y[˜YÙ\Î‚ˆH
+Š”Ù]YŠŠˆÌLŽNX^Ý™\ˆ™Ø˜JM‹NKLŽKŒMJXš[Ú]HÚXÚÈXÛÛ‹‚ˆH
+Š“ÝÙYÈ[™[™ÎŠŠˆÑNQL˜^Ý™\ˆ™Ø˜JKMNLKŒMJXš[‚‚ˆÈÈÈ^[œÙH	ˆYÙ\ˆ\ÝÂ‹H\Ý][\È™\ÚYHÚ][ˆÝXÝ\™Y]™[HÛ]H[™[ÈÙ\\˜]YžHZ\›[™H]šY\œÈ
+™Ø˜JMKMKMKŒJX
+K‚‹HYÛÝˆÚ\˜Ý[\ˆØ]YÛÜžH˜YÙHÜˆ^Y\ˆ]˜]\ˆÚ]X[Z[š]X[\ÙÜ˜\K‚‹HÙ[\ˆÛÝˆš[X\žH˜[œØXÝ[Ûˆ]H[ˆ]K[YÙXÛÛ™\žHY]Y]H
+]KÜ]˜][ËK™Ëˆ–[ÝHZY8 (ˆ[ÜHŠH[ˆ›ÙK\ÛX‚‹HšYÚÛÝˆ™]˜[[˜ÙH[\XÝ[ˆX[œ›ÜXX[\ˆ›ÛÈÛÛÜ™YZ[›ÜˆÜÚ]]™H˜[[˜Ù\È[™]]YÛÜ˜[Ø[X™\ˆ›ÜˆÝÙY[[Ý[Ë‚‚ˆÈÈÈ[œ]šY[Â‹H˜XÚÙÜ›Ý[™ÛÛZ[™\ˆÌŒMÌXÚ]H\›Ü™\ˆ
+ÌÌÍMMX
+K‚‹HÝ]HÚ[™ÙNˆ›ØÝ\ÈÚYÈ›Ü™\ˆÈÌLŽNX[Û™ÜÚYH[ˆ[XšY[Z[ÛÝË‚‹HÝ\œ™[˜ÞH[œ]Îˆ^˜K[\™ÙH\Ü^H[X™\œÈ
+[Y\šXËZ\›Ø
+HÚ]Hš^Y]]YÝ\œ™[˜ÞH™Yš^
+	8 «0¨Ø
+H[YÛ™YÈHY‚‚ˆÈÈÈÜ]ÛY\œÈ	ˆ\XÚ\[Ù[XÝÜœÂ‹H][K\\XÚ\[ÙÙÛ\Îˆ›Ý[™YÜ]X\™H]˜]\œÈÚ]XÝ]™H›Ü™\ˆÚXÚÜË‚‹H\˜Ù[YÙKÔÚ\™HÝ\\ŽˆXÝ[H[Ý\\œÈ›ÝšY[™È\XËYœšY[™H\Ú[ÈÚ][œÝ[™XÛÛ\]][Ûˆ\Ü^K
